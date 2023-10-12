@@ -1,10 +1,14 @@
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 93vh;
+  min-height: 94.6vh;
   padding-top: 50px;
   font-family: "Montserrat";
-  background: black;
+  background: #161616;
+  background-image: url(../assets/images/background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 * {
@@ -13,7 +17,6 @@
 
 body {
   margin: 0;
-  background: black;
 }
 
 @media screen and (max-width: 950px) {
