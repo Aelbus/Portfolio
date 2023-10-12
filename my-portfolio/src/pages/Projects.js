@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 import Booki from "../assets/images/projets/booki.webp";
+import Ohmyfood from "../assets/images/projets/Ohmyfood.webp";
 
 const Projects = () => {
   return (
@@ -46,7 +47,7 @@ const Projects = () => {
             Site fictif réalisez avec OpenClassRoom <br />
             Commande de nourriture en ligne
           </p>
-          <img className="card-img" src="#" alt="Site OhMyFood" />
+          <img className="card-img" src={Ohmyfood} alt="Site OhMyFood" />
           <div className="button-selector">
             <a href="https://github.com/Aelbus/OhMyFood" className="button-a">
               Voir Code
