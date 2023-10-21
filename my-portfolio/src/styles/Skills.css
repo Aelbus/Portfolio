@@ -4,19 +4,104 @@
   height: 85vh;
   border-radius: 20px 20px 20px 20px;
   border: 2px black solid;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.skills-div p {
+  margin-top: 30px;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+.skills-div .skill-container {
+  margin-top: 100px;
+}
+.skills-div .skill-container .dev {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  background: #171717;
+  border: 2px rgb(0, 0, 0) solid;
+  border-radius: 50px 50px 50px 50px;
+  padding: 30px 0;
+  margin: 50px 30px;
+}
+.skills-div .skill-container .dev .title-dev {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  font-size: 30px;
+  text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
+}
+.skills-div .skill-container .dev .dev-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.skills-div .skill-container .dev .dev-skill img {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 100%;
+  border: 2px white solid;
+}
+.skills-div .skill-container .other {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  background: #171717;
+  border: 2px rgb(0, 0, 0) solid;
+  border-radius: 50px 50px 50px 50px;
+  padding: 30px 0;
+  margin: 50px 30px;
+}
+.skills-div .skill-container .other .title-other {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  font-size: 30px;
+  text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
+}
+.skills-div .skill-container .other .other-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.skills-div .skill-container .other .other-skill img {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 100%;
+  border: 2px white solid;
 }
 
-@keyframes slide-in-left {
+@keyframes slide-in-top {
   0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  50% {
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
