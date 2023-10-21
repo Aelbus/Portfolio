@@ -4,7 +4,7 @@
   height: calc(100vh - 50px);
   padding-top: 50px;
   font-family: "Montserrat";
-  background: #161616;
+  background-image: url(../assets/images/background.webp);
 }
 
 * {
