@@ -1,0 +1,49 @@
+.error-div {
+  margin: 0px 20px 0px 200px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.error-div .error-div-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #242424;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 640px;
+  height: 640px;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+.error-div .error-div-content .error-number {
+  font-size: 100px;
+}
+.error-div .error-div-content .error-text {
+  margin-top: 50px;
+}
+.error-div .error-link {
+  margin-top: 30px;
+  color: red;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: black;
+  padding: 20px 30px 20px 30px;
+  border-radius: 20px 20px 20px 20px;
+  border: solid white 2px;
+  width: 350px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Error.css.map */
