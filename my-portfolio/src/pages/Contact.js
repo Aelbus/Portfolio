@@ -4,6 +4,8 @@ import "../styles/Contact.css";
 
 function ContactForm() {
   const [errors, setErrors] = useState({});
+  const [isSent, setIsSent] = useState(false); // État pour suivre l'envoi du formulaire
+
   const inputRefs = {
     name: useRef(null),
     email: useRef(null),
@@ -13,7 +15,7 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setErrors({}); // Réinitialisez les erreurs avant chaque soumission
+    setErrors({}); // Réinitialise les erreurs avant chaque soumission
 
     const requiredFields = ["name", "email", "subject", "message"];
     let hasErrors = false;
@@ -26,7 +28,7 @@ function ContactForm() {
     });
 
     if (hasErrors) {
-      return; // Ne soumettez pas le formulaire s'il y a des erreurs
+      return; // Ne soumet pas le formulaire s'il y a des erreurs
     }
 
     emailjs
@@ -38,6 +40,7 @@ function ContactForm() {
       )
       .then((result) => {
         console.log("E-mail envoyé avec succès", result.text);
+        setIsSent(true); // Met à jour l'état pour afficher le message de confirmation
       })
       .catch((error) => {
         console.error("Erreur lors de l'envoi de l'e-mail", error);
@@ -69,7 +72,12 @@ function ContactForm() {
             <label>Message:</label>
             <textarea name="message" ref={inputRefs.message} />
           </div>
-          <button type="submit">Envoyer</button>
+          <div className="btn-submit">
+            <button type="submit">Envoyer</button>
+            {isSent && (
+              <p className="Enjoy">Votre message a été envoyé avec succès !</p>
+            )}
+          </div>
         </form>
       </div>
     </div>

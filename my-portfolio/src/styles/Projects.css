@@ -6,98 +6,124 @@
   border: 2px black solid;
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.projects-div .information-project {
-  margin-top: 20px;
+.projects-div h2 {
   font-family: "Fjalla One", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
-  font-size: 25px;
-  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
 }
 .projects-div .card-container {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.projects-div .card-container .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: #171717;
-  border: 2px rgb(0, 0, 0) solid;
-  width: 500px;
-  height: 600px;
-  border-radius: 50px 50px 50px 50px;
-  text-align: center;
-  color: white;
-  padding: 10px 30px 30px 30px;
-}
-.projects-div .card-container .card .card-title {
-  margin-top: 10px;
-  font-family: "Fjalla One", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-}
-.projects-div .card-container .card .card-info {
-  margin: 15px 0 15px 0;
-  font-family: "Fjalla One", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 13px;
-  text-align: center;
-  text-decoration: none;
-}
-.projects-div .card-container .card .card-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 20px 20px 20px 20px;
-}
-.projects-div .card-container .card .card-skill {
-  width: 100%;
-  display: flex;
-  gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
-.projects-div .card-container .card .card-skill img {
-  width: 30px;
-  height: 30px;
+.projects-div .card-container .card {
+  background: #1b1b1b;
+  border: black solid 3px;
+  border-radius: 30px 30px 30px 30px;
+  margin: 20px;
+}
+.projects-div .card-container .card .card-main {
+  padding: 0 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.projects-div .card-container .card .card-main .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  width: 50%;
+}
+.projects-div .card-container .card .card-main .card-info h3 {
+  font-size: 50px;
+}
+.projects-div .card-container .card .card-main .card-info p {
+  font-size: 20px;
+}
+.projects-div .card-container .card .card-main .card-info .card-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  gap: 10px;
+}
+.projects-div .card-container .card .card-main .card-info .card-skill img {
+  width: 50px;
+  height: 50px;
   background: white;
-  border-radius: 100%;
-  border: 2px white solid;
+  border-radius: 50%;
+  border: white solid 2px;
+}
+.projects-div .card-container .card .card-main .card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.projects-div .card-container .card .card-main .card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 30px 30px 30px 30px;
 }
 .projects-div .card-container .card .button-selector {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20%;
-}
-.projects-div .card-container .card .button-selector .button-a {
-  width: 80px;
-  padding: 15px 20px 15px 20px;
-  border-radius: 20px 20px 20px 20px;
-  background: #4bb04e;
   font-family: "Fjalla One", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #ffffff;
-  font-size: 15px;
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+.projects-div .card-container .card .button-selector .button-a {
   text-align: center;
+  background: #4bb04e;
   text-decoration: none;
+  color: #ffffff;
+  width: 70px;
+  padding: 10px 15px 5px 15px;
+  border-radius: 20px 20px 0px 0px;
 }
 .projects-div .card-container .card .button-selector .button-a:hover {
   box-shadow: 0 0 11px rgb(75, 176, 78);
+}
+.projects-div .card-container .btn-prev-next {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+.projects-div .card-container .btn-prev-next button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #357d35;
+  box-shadow: 0 0 11px rgb(75, 176, 78);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.projects-div .card-container .btn-prev-next button:hover {
+  background-color: #4bb04e;
 }
 
 @keyframes slide-in-top {
@@ -118,74 +144,6 @@
   100% {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  .projects-div {
-    margin: 191px 0px 0px 55px;
-    background: #242424;
-    height: 68vh;
-    border-radius: 20px 0px 0px 20px;
-    border: 2px black solid;
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .projects-div .information-project {
-    display: none;
-  }
-  .projects-div .card-container {
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  .projects-div .card-container .card {
-    margin-left: 20px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #171717;
-    border: 2px rgb(0, 0, 0) solid;
-    width: 100%;
-    height: 110px;
-    border-radius: 50px 0px 0px 50px;
-    text-align: center;
-    color: white;
-    padding: 0;
-  }
-  .projects-div .card-container .card .card-title {
-    margin-top: 0;
-    font-size: 20px;
-    margin-left: 50px;
-    margin-top: 5px;
-    text-align: left;
-    text-decoration: none;
-  }
-  .projects-div .card-container .card .card-info {
-    display: none;
-  }
-  .projects-div .card-container .card .card-img {
-    display: none;
-  }
-  .projects-div .card-container .card .card-skill {
-    margin-top: 0px;
-  }
-  .projects-div .card-container .card .button-selector {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    margin-right: 20px;
-  }
-  .projects-div .card-container .card .button-selector .button-a {
-    width: 70px;
-    padding: 10px 15px 5px 15px;
-    border-radius: 20px 20px 0px 0px;
   }
 }
 
