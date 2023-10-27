@@ -20,13 +20,13 @@
   background: #171717;
   border: 2px rgb(0, 0, 0) solid;
   border-radius: 50px 50px 50px 50px;
-  width: 500px;
+  width: 60%;
 }
 .home-div .home-info h1 {
   font-size: 90px;
   text-align: center;
 }
-.home-div .home-info h3 {
+.home-div .home-info h2 {
   font-size: 18px;
   text-align: center;
 }
@@ -34,8 +34,12 @@
   font-size: 15px;
   text-align: center;
 }
+.home-div .home-info .home-info-perso {
+  text-align: left;
+}
 .home-div .home-ael {
-  margin-right: 80px;
+  width: 30%;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

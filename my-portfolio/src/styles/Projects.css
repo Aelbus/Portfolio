@@ -23,6 +23,9 @@
   gap: 20px;
 }
 .projects-div .card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #171717;
   border: 2px rgb(0, 0, 0) solid;
   width: 500px;
@@ -30,9 +33,10 @@
   border-radius: 50px 50px 50px 50px;
   text-align: center;
   color: white;
-  padding: 10px;
+  padding: 10px 30px 30px 30px;
 }
 .projects-div .card-container .card .card-title {
+  margin-top: 10px;
   font-family: "Fjalla One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -53,9 +57,24 @@
 }
 .projects-div .card-container .card .card-img {
   width: 100%;
-  height: 440px;
+  height: 350px;
   object-fit: cover;
   border-radius: 20px 20px 20px 20px;
+}
+.projects-div .card-container .card .card-skill {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.projects-div .card-container .card .card-skill img {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 100%;
+  border: 2px white solid;
 }
 .projects-div .card-container .card .button-selector {
   margin-top: 15px;
@@ -65,6 +84,7 @@
   gap: 20%;
 }
 .projects-div .card-container .card .button-selector .button-a {
+  width: 80px;
   padding: 15px 20px 15px 20px;
   border-radius: 20px 20px 20px 20px;
   background: rgb(0, 98, 163);
