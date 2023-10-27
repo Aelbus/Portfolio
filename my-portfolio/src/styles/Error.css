@@ -29,6 +29,7 @@
 }
 .error-div .error-div-content .error-text {
   margin-top: 50px;
+  width: 50%;
 }
 .error-div .error-link {
   margin-top: 30px;
@@ -44,6 +45,31 @@
   border: solid white 2px;
   width: 350px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .error-div {
+    margin: 191px 0px 0px 55px;
+    background: #242424;
+    height: 68vh;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px black solid;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .error-div .error-div-content {
+    background: none;
+    border: none;
+  }
+  .error-div .error-div-content .error-number {
+    font-size: 50px;
+  }
+  .error-div .error-div-content .error-text {
+    width: 180px;
+    font-size: 18px;
+  }
+  .error-div .error-link {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Error.css.map */

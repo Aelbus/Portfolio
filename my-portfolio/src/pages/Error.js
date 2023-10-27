@@ -8,8 +8,8 @@ const Error = () => {
       <div className="error-div-content">
         <p className="error-number">ERROR:404</p>
         <p className="error-text">
-          Désolé. À moins que vous ayez une machine à voyager dans le temps, ce
-          contenu n'est pas disponible.
+          Désolé. <br />À moins que vous ayez une machine à voyager dans le
+          temps, ce contenu n'est pas disponible.
         </p>
       </div>
       <Link to="/" className="error-link">
