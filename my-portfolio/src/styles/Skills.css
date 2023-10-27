@@ -105,5 +105,91 @@
     opacity: 1;
   }
 }
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .skills-div {
+    margin: 191px 0px 0px 55px;
+    background: #242424;
+    height: 68vh;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px black solid;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .skills-div p {
+    display: none;
+  }
+  .skills-div .skill-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    padding: 20px 0 20px 0;
+    margin-top: 10px;
+  }
+  .skills-div .skill-container .dev {
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
+  }
+  .skills-div .skill-container .dev .title-dev {
+    display: none;
+  }
+  .skills-div .skill-container .dev .dev-skill {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+  }
+  .skills-div .skill-container .dev .dev-skill img {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+    border: 2px white solid;
+  }
+  .skills-div .skill-container .other {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
+    padding-left: 10px;
+  }
+  .skills-div .skill-container .other .title-other {
+    display: none;
+  }
+  .skills-div .skill-container .other .other-skill {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+  }
+  .skills-div .skill-container .other .other-skill img {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+    border: 2px white solid;
+  }
+}
 
 /*# sourceMappingURL=Skills.css.map */

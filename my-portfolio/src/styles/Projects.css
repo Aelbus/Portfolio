@@ -87,7 +87,7 @@
   width: 80px;
   padding: 15px 20px 15px 20px;
   border-radius: 20px 20px 20px 20px;
-  background: rgb(0, 98, 163);
+  background: #4bb04e;
   font-family: "Fjalla One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -97,7 +97,7 @@
   text-decoration: none;
 }
 .projects-div .card-container .card .button-selector .button-a:hover {
-  box-shadow: 0 0 11px rgb(255, 255, 255);
+  box-shadow: 0 0 11px rgb(75, 176, 78);
 }
 
 @keyframes slide-in-top {
@@ -108,6 +108,84 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .projects-div {
+    margin: 191px 0px 0px 55px;
+    background: #242424;
+    height: 68vh;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px black solid;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .projects-div .information-project {
+    display: none;
+  }
+  .projects-div .card-container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .projects-div .card-container .card {
+    margin-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #171717;
+    border: 2px rgb(0, 0, 0) solid;
+    width: 100%;
+    height: 110px;
+    border-radius: 50px 0px 0px 50px;
+    text-align: center;
+    color: white;
+    padding: 0;
+  }
+  .projects-div .card-container .card .card-title {
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+  }
+  .projects-div .card-container .card .card-info {
+    display: none;
+  }
+  .projects-div .card-container .card .card-img {
+    display: none;
+  }
+  .projects-div .card-container .card .card-skill {
+    margin-top: 0px;
+  }
+  .projects-div .card-container .card .button-selector {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-right: 20px;
+  }
+  .projects-div .card-container .card .button-selector .button-a {
+    width: 70px;
+    padding: 10px 15px 5px 15px;
+    border-radius: 20px 20px 0px 0px;
   }
 }
 

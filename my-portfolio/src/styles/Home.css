@@ -60,7 +60,7 @@
 .home-div .home-ael .home-link a {
   padding: 15px 20px 15px 20px;
   border-radius: 20px 20px 20px 20px;
-  background: rgb(0, 98, 163);
+  background: #4bb04e;
   font-family: "Fjalla One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +70,7 @@
   text-decoration: none;
 }
 .home-div .home-ael .home-link a:hover {
-  box-shadow: 0 0 11px rgb(255, 255, 255);
+  box-shadow: 0 0 11px rgb(75, 176, 78);
 }
 
 @keyframes slide-in-top {
@@ -81,6 +81,70 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .home-div {
+    margin: 191px 0px 0px 55px;
+    background: #242424;
+    height: 68vh;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px black solid;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home-div .home-info {
+    position: relative;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 50px 0 0 0;
+    color: #ffffff;
+    width: 100%;
+  }
+  .home-div .home-info h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .home-div .home-info h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .home-div .home-info p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .home-div .home-info .home-info-perso {
+    text-align: left;
+  }
+  .home-div .home-ael .home-img {
+    display: none;
+    width: 0%;
+  }
+  .home-div .home-ael .home-link {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+  }
+  .home-div .home-ael .home-link a {
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px 0px 0px 20px;
+    background: #4bb04e;
   }
 }
 
