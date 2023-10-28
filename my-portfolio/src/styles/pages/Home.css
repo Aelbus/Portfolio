@@ -93,10 +93,11 @@
     opacity: 1;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 426px) {
   .home-div {
     margin: 191px 0px 0px 55px;
     background: #242424;
+    width: 100vw;
     height: 68vh;
     border-radius: 20px 0px 0px 20px;
     border: 2px black solid;

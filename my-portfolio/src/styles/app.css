@@ -3,8 +3,10 @@
   flex-direction: column;
   height: calc(100vh - 50px);
   padding-top: 50px;
-  font-family: "Montserrat";
-  background-image: url(../assets/images/background.webp);
+  font-family: "Fjalla One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: black;
 }
 
 * {
@@ -13,6 +15,17 @@
 
 body {
   margin: 0;
+}
+
+@media screen and (max-width: 426px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    padding-top: 50px;
+    font-family: "Montserrat";
+    background-color: black;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

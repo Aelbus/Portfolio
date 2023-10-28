@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/Home.css";
+import "../styles//pages/Home.css";
 import PictureProfil from "../assets/images/photos/ProfilPicture.webp";
 import CV from "../assets/files/CV.pdf";
 const Home = () => {
   return (
     <div className="home-div">
       <div className="home-info">
-        <h1>Porfolio</h1>
+        <h1>Portfolio</h1>
         <h2>
           Bienvenue <br />
           dans mon univers. <br />
@@ -28,7 +28,9 @@ const Home = () => {
           <img className="home-pp" src={PictureProfil} alt="Photo AeLBuS" />
         </div>
         <div className="home-link">
-          <a href={CV}>Télécharger CV</a>
+          <a href={CV} target="_blank" rel="noreferrer">
+            Télécharger CV
+          </a>
         </div>
       </div>
     </div>

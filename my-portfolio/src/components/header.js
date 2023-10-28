@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/header.css";
+import "../styles/components/header.css";
 import { NavLink } from "react-router-dom";
 import logoAEL from "../assets/images/Logo.webp";
 import insta from "../assets/icons/Reseau/Insta.webp";
@@ -59,16 +59,28 @@ const Header = () => {
           </ul>
         </nav>
         <div className="Social-media">
-          <a href="https://github.com/Aelbus">
+          <a href="https://github.com/Aelbus" target="_blank" rel="noreferrer">
             <img src={github} alt="GitHub" />
           </a>
-          <a href="https://www.linkedin.com/in/cl%C3%A9ment-b-997833266/">
+          <a
+            href="https://www.linkedin.com/in/cl%C3%A9ment-b-997833266/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkedin} alt="LinkedIn" />
           </a>
-          <a href="https://soundcloud.com/aelbus">
+          <a
+            href="https://soundcloud.com/aelbus"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={soundcloud} alt="soundcloud" />
           </a>
-          <a href="https://www.instagram.com/aelbuslive/">
+          <a
+            href="https://www.instagram.com/aelbuslive/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={insta} alt="Instagram" />
           </a>
         </div>

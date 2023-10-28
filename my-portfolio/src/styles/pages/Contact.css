@@ -46,9 +46,8 @@
 .contact-div input[type=text]::placeholder,
 .contact-div input[type=email]::placeholder,
 .contact-div input[type=tel]::placeholder {
-  font-size: 18px;
-  color: red;
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 .contact-div textarea {
   font-family: "Fjalla One", sans-serif;
@@ -67,8 +66,7 @@
 }
 .contact-div textarea::placeholder {
   font-size: 18px;
-  color: red;
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: rgba(0, 0, 0, 0.918);
 }
 .contact-div .btn-submit {
   display: flex;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Projects.css";
+import "../styles/pages/Projects.css";
 import Booki from "../assets/images/projets/booki.webp";
 import Ohmyfood from "../assets/images/projets/Ohmyfood.webp";
 import Kasa from "../assets/images/projets/kasa.webp";
@@ -82,19 +82,39 @@ const Projects = () => {
             </div>
           </div>
           <div className="button-selector">
-            <a href={projects[currentProject].codeLink} className="button-a">
+            <a
+              href={projects[currentProject].codeLink}
+              className="button-a"
+              target="_blank"
+              rel="noreferrer"
+            >
               Voir Code
             </a>
             {projects[currentProject].liveLink && (
-              <a href={projects[currentProject].liveLink} className="button-a">
+              <a
+                href={projects[currentProject].liveLink}
+                className="button-a"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Pages
               </a>
             )}
           </div>
         </div>
         <div className="btn-prev-next">
-          <button onClick={() => changeProject("prev")}>Précédent</button>
-          <button onClick={() => changeProject("next")}>Suivant</button>
+          <button className="btn-text" onClick={() => changeProject("prev")}>
+            Précédent
+          </button>
+          <button className="btn-ico" onClick={() => changeProject("prev")}>
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button className="btn-text" onClick={() => changeProject("next")}>
+            Suivant
+          </button>
+          <button className="btn-ico" onClick={() => changeProject("next")}>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Skills.css";
+import "../styles/pages/Skills.css";
 import logo_css from "../assets/icons/Skills/css.webp";
 import logo_github from "../assets/icons/Skills/github.webp";
 import logo_html from "../assets/icons/Skills/html.webp";
