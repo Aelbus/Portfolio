@@ -3,9 +3,9 @@ import "../styles/components/footer.css";
 
 const footer = () => {
   return (
-    <div className="footer-div">
+    <footer className="footer-div">
       <p>© 2023 AelbusProd All rights reserved</p>
-    </div>
+    </footer>
   );
 };
 

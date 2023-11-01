@@ -1,7 +1,7 @@
 .home-div {
-  margin: 0px 20px 0px 200px;
   background: #242424;
-  height: 85vh;
+  margin-top: 120px;
+  height: 78vh;
   border-radius: 20px 20px 20px 20px;
   border: 2px black solid;
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -95,57 +95,81 @@
 }
 @media (max-width: 426px) {
   .home-div {
-    margin: 191px 0px 0px 55px;
     background: #242424;
-    width: 100vw;
+    margin-top: 195px;
     height: 68vh;
-    border-radius: 20px 0px 0px 20px;
-    border: 2px black solid;
+    width: 85%;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 50px;
+    border: 2px #4bb04e solid;
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   .home-div .home-info {
-    position: relative;
-    background: none;
-    border: none;
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin: 50px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: #ffffff;
+    background: none;
+    border: none;
+    border-radius: 0;
     width: 100%;
   }
   .home-div .home-info h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
   }
   .home-div .home-info h2 {
     font-size: 18px;
     text-align: center;
   }
+  .home-div .home-info ul {
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
   .home-div .home-info p {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
   }
   .home-div .home-info .home-info-perso {
     text-align: left;
   }
+  .home-div .home-ael {
+    width: 100%;
+    margin-right: 0;
+    gap: 0;
+  }
   .home-div .home-ael .home-img {
     display: none;
-    width: 0%;
   }
   .home-div .home-ael .home-link {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    display: flex;
+    margin-top: 15px;
   }
   .home-div .home-ael .home-link a {
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px 0px 0px 20px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px 20px 20px 20px;
     background: #4bb04e;
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .home-div .home-ael .home-link a:hover {
+    box-shadow: 0 0 11px rgb(75, 176, 78);
   }
 }
 

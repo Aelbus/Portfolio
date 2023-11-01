@@ -1,11 +1,14 @@
 .error-div {
-  margin: 0px 20px 0px 200px;
-  height: 85vh;
+  background: none;
+  margin-top: 120px;
+  height: 78vh;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px black solid;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  border-radius: 20px 20px 20px 20px;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .error-div .error-div-content {
   display: flex;
@@ -28,8 +31,8 @@
   font-size: 100px;
 }
 .error-div .error-div-content .error-text {
-  margin-top: 50px;
-  width: 50%;
+  margin-top: 20px;
+  width: 500px;
 }
 .error-div .error-link {
   margin-top: 30px;
@@ -44,32 +47,8 @@
   border-radius: 20px 20px 20px 20px;
   border: solid white 2px;
   width: 350px;
+  height: 25px;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .error-div {
-    margin: 191px 0px 0px 55px;
-    background: #242424;
-    height: 68vh;
-    border-radius: 20px 0px 0px 20px;
-    border: 2px black solid;
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-  .error-div .error-div-content {
-    background: none;
-    border: none;
-  }
-  .error-div .error-div-content .error-number {
-    font-size: 50px;
-  }
-  .error-div .error-div-content .error-text {
-    width: 180px;
-    font-size: 18px;
-  }
-  .error-div .error-link {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=Error.css.map */

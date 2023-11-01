@@ -18,7 +18,6 @@ import logo_aftereffect from "../assets/icons/Skills/aftereffect.webp";
 const Skills = () => {
   return (
     <div className="skills-div">
-      <p>My Skills</p>
       <div className="skill-container">
         <div className="dev">
           <p className="title-dev"> Developpement et code</p>

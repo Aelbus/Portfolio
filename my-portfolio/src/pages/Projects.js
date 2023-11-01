@@ -4,18 +4,20 @@ import Booki from "../assets/images/projets/booki.webp";
 import Ohmyfood from "../assets/images/projets/Ohmyfood.webp";
 import Kasa from "../assets/images/projets/kasa.webp";
 import events from "../assets/images/projets/77events.webp";
+import argentbank from "../assets/images/projets/argentbank.webp";
 import logo_html from "../assets/icons/Skills/html.webp";
 import logo_css from "../assets/icons/Skills/css.webp";
 import logo_sass from "../assets/icons/Skills/sass.webp";
 import logo_javascript from "../assets/icons/Skills/javascript.webp";
 import logo_react from "../assets/icons/Skills/react.webp";
+import logo_redux from "../assets/icons/Skills/redux.webp";
 
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0);
   const projects = [
     {
       title: "BOOKI",
-      info: "Site fictif réalisé avec OpenClassRoom. Location logement à Marseille pour les vacances.",
+      info: "Location logement à Marseille pour les vacances",
       image: Booki,
       skills: [logo_html, logo_css],
       codeLink: "https://github.com/Aelbus/BOOKI",
@@ -23,14 +25,14 @@ const Projects = () => {
     },
     {
       title: "KASA",
-      info: "Site fictif réalisé avec OpenClassRoom. Location de logement.",
+      info: "Location de logement",
       image: Kasa,
       skills: [logo_html, logo_css, logo_sass, logo_javascript, logo_react],
       codeLink: "https://github.com/Aelbus/Kasa",
     },
     {
       title: "OhMyFood",
-      info: "Site fictif réalisé avec OpenClassRoom. Commande de nourriture en ligne.",
+      info: "Commande de nourriture en ligne",
       image: Ohmyfood,
       skills: [logo_html, logo_css, logo_sass],
       codeLink: "https://github.com/Aelbus/OhMyFood",
@@ -38,14 +40,28 @@ const Projects = () => {
     },
     {
       title: "77Events",
-      info: "Site fictif réalisé avec OpenClassRoom. Calendrier événementiel.",
+      info: "Calendrier événementiel",
       image: events,
       skills: [logo_html, logo_css, logo_sass, logo_javascript, logo_react],
       codeLink: "https://github.com/Aelbus/77Events",
     },
+    {
+      title: "ArgentBank",
+      info: "Banque en ligne",
+      image: argentbank,
+      skills: [
+        logo_html,
+        logo_css,
+        logo_sass,
+        logo_javascript,
+        logo_react,
+        logo_redux,
+      ],
+      codeLink: "https://github.com/Aelbus/ArgentBanK",
+    },
   ];
 
-  const skillsNames = ["HTML", "CSS", "Sass", "JavaScript", "React"];
+  const skillsNames = ["HTML", "CSS", "Sass", "JavaScript", "React", "Redux"];
 
   const changeProject = (direction) => {
     const totalProjects = projects.length;
@@ -57,9 +73,8 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-div">
+    <main className="projects-div">
       <div className="card-container">
-        <h2>Projects</h2>
         <div className="card">
           <div className="card-main">
             <div className="card-info">
@@ -107,17 +122,17 @@ const Projects = () => {
             Précédent
           </button>
           <button className="btn-ico" onClick={() => changeProject("prev")}>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </button>
           <button className="btn-text" onClick={() => changeProject("next")}>
             Suivant
           </button>
           <button className="btn-ico" onClick={() => changeProject("next")}>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

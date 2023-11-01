@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
+import IMGcontact from "../assets/images/photos/contact.webp";
 import "../styles/pages/Contact.css";
 
 function ContactForm() {
@@ -53,24 +54,29 @@ function ContactForm() {
         <h2>Contactez-moi</h2>
         <form className="contact-form" onSubmit={sendEmail}>
           <div className="contact-label">
-            <label>Nom:</label>
-            <input type="text" name="name" ref={inputRefs.name} />
+            <label htmlFor="name">Nom:</label>
+            <input type="text" name="name" id="name" ref={inputRefs.name} />
           </div>
           <div className="contact-label">
-            <label>Email:</label>
-            <input type="email" name="email" ref={inputRefs.email} />
+            <label htmlFor="email">Email:</label>
+            <input type="email" name="email" id="email" ref={inputRefs.email} />
           </div>
           <div className="contact-label">
-            <label>Sujet:</label>
-            <input type="text" name="subject" ref={inputRefs.subject} />
+            <label htmlFor="subject">Sujet:</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              ref={inputRefs.subject}
+            />
           </div>
           <div className="contact-label">
-            <label>Téléphone:</label>
-            <input type="tel" name="phone" />
+            <label htmlFor="phone">Téléphone:</label>
+            <input type="tel" name="phone" id="phone" />
           </div>
           <div className="contact-label">
-            <label>Message:</label>
-            <textarea name="message" ref={inputRefs.message} />
+            <label htmlFor="message">Message:</label>
+            <textarea name="message" id="message" ref={inputRefs.message} />
           </div>
           <div className="btn-submit">
             <button type="submit">Envoyer</button>
@@ -79,6 +85,9 @@ function ContactForm() {
             )}
           </div>
         </form>
+      </div>
+      <div className="contact-img">
+        <img src={IMGcontact} alt="Contact" />
       </div>
     </div>
   );
