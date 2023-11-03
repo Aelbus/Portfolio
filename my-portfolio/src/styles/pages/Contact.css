@@ -1,7 +1,8 @@
 .contact-div {
   background: #242424;
   margin-top: 120px;
-  height: 78vh;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 20px 20px 20px 20px;
   border: 2px black solid;
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -11,12 +12,15 @@
 }
 .contact-div .contact-container {
   width: 40%;
-  padding: 20px;
+  height: 100%;
+  margin: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .contact-div .contact-container label {
   position: relative;
   display: block;
+  left: 15px;
+  width: 50%;
   margin-bottom: 6px;
   font-weight: bold;
   color: white;
@@ -48,7 +52,7 @@
 .contact-div .contact-container textarea {
   z-index: 2;
   font-family: "Fjalla One", sans-serif;
-  width: 100%;
+  width: 90%;
   height: 150px;
   padding: 10px;
   margin-bottom: 10px;
@@ -95,7 +99,9 @@
   font-size: 20px;
 }
 .contact-div .contact-img {
-  width: 30%;
+  width: 50%;
+  height: 100%;
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,162 +124,26 @@
     opacity: 1;
   }
 }
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@media (max-width: 769px) {
+@media (max-width: 650px) {
   .contact-div {
-    background: #242424;
-    margin-top: 100px;
-    height: 80vh;
-    width: 90%;
-    border-radius: 30px 30px 30px 30px;
-    margin-left: 50px;
-    margin-right: 0;
-    border: 2px black solid;
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 120px 0 0 0;
+    border-radius: 0 0 0 0;
+    animation: none;
   }
   .contact-div .contact-container {
     width: 90%;
-  }
-  .contact-div .contact-container label {
-    position: relative;
-    left: 15px;
-  }
-  .contact-div .contact-container input[type=text],
-  .contact-div .contact-container input[type=email],
-  .contact-div .contact-container input[type=tel] {
-    width: 80%;
-  }
-  .contact-div .contact-container input[type=text]::placeholder,
-  .contact-div .contact-container input[type=email]::placeholder,
-  .contact-div .contact-container input[type=tel]::placeholder {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-  }
-  .contact-div .contact-container textarea {
-    width: 90%;
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background: #5c5c5c;
-    color: white;
-    resize: none;
-  }
-  .contact-div .contact-container textarea:focus {
-    border-color: #4bb04e;
-    outline: none;
-  }
-  .contact-div .contact-container textarea::placeholder {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.918);
-  }
-  .contact-div .contact-container .btn-submit {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    height: 100%;
+    margin: 20px;
   }
   .contact-div .contact-container button[type=submit] {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 20px;
-    background-color: #4bb04e;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .contact-div .contact-container button[type=submit]:hover {
-    box-shadow: 0 0 11px rgb(75, 176, 78);
+    font-size: 18px;
   }
   .contact-div .contact-container h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: white;
+    display: none;
   }
   .contact-div .contact-container .Enjoy {
     color: #4bb04e;
-    font-size: 20px;
-  }
-  .contact-div .contact-img {
-    display: none;
-  }
-}
-@media (max-width: 426px) {
-  .contact-div {
-    background: #242424;
-    margin-top: 195px;
-    height: 68vh;
-    width: 85%;
-    border-radius: 30px 30px 30px 30px;
-    margin-left: 50px;
-    border: 2px #4bb04e solid;
-    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact-div .contact-container {
-    width: 90%;
-    padding: 0px;
-  }
-  .contact-div .contact-container label {
-    left: 15px;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .contact-div .contact-container input[type=text],
-  .contact-div .contact-container input[type=email],
-  .contact-div .contact-container input[type=tel] {
-    width: 50%;
-    height: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  .contact-div .contact-container input[type=text]::placeholder,
-  .contact-div .contact-container input[type=email]::placeholder,
-  .contact-div .contact-container input[type=tel]::placeholder {
-    font-size: 12px;
-  }
-  .contact-div .contact-container textarea {
-    width: 90%;
-    height: 90px;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 30px;
-  }
-  .contact-div .contact-container textarea::placeholder {
-    font-size: 15px;
-  }
-  .contact-div .contact-container .btn-submit {
-    gap: 10px;
-  }
-  .contact-div .contact-container button[type=submit] {
-    font-size: 15px;
-    padding: 7px 8px;
-    border-radius: 30px;
-  }
-  .contact-div .contact-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .contact-div .contact-container .Enjoy {
-    font-size: 12px;
+    font-size: 18px;
   }
   .contact-div .contact-img {
     display: none;

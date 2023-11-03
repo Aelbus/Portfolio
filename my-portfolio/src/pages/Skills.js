@@ -20,7 +20,7 @@ const Skills = () => {
     <div className="skills-div">
       <div className="skill-container">
         <div className="dev">
-          <p className="title-dev"> Developpement et code</p>
+          <p className="title-dev"> Developpement</p>
           <div className="dev-skill">
             <img src={logo_html} alt="HTML" />
             Html5
