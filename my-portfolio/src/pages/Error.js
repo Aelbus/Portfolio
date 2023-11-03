@@ -12,9 +12,6 @@ const Error = () => {
           temps, ce contenu n'est pas disponible.
         </p>
       </div>
-      <Link to="/" className="error-link">
-        Retourner sur la page d'accueil
-      </Link>
     </div>
   );
 };
