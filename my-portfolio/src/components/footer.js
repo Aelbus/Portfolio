@@ -13,7 +13,7 @@ const footer = () => {
           <img src={github} alt="GitHub" />
         </a>
         <a
-          href="https://www.linkedin.com/in/cl%C3%A9ment-b-997833266/"
+          href="https://www.linkedin.com/in/aelprod/"
           target="_blank"
           rel="noreferrer"
         >
