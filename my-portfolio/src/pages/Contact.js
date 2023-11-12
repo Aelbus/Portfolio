@@ -4,7 +4,6 @@ import IMGcontact from "../assets/images/photos/contact.webp";
 import "../styles/pages/Contact.css";
 
 function ContactForm() {
-  const [errors, setErrors] = useState({});
   const [isSent, setIsSent] = useState(false); // État pour suivre l'envoi du formulaire
 
   const inputRefs = {
@@ -16,7 +15,6 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setErrors({}); // Réinitialise les erreurs avant chaque soumission
 
     const requiredFields = ["name", "email", "subject", "message"];
     let hasErrors = false;

@@ -25,7 +25,7 @@ const Home = () => {
 
       <div className="home-ael">
         <div className="home-img">
-          <img className="home-pp" src={PictureProfil} alt="Photo AeLBuS" />
+          <img className="home-pp" src={PictureProfil} alt="AeLBuS" />
         </div>
         <div className="home-link">
           <a href={CV} target="_blank" rel="noreferrer">
