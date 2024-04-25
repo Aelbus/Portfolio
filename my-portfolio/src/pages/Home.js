@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles//pages/Home.css";
 import PictureProfil from "../assets/images/photos/ProfilPicture.webp";
-import CV from "../assets/files/CV.pdf";
+
 const Home = () => {
   return (
     <div className="home-div">
@@ -26,11 +26,6 @@ const Home = () => {
       <div className="home-ael">
         <div className="home-img">
           <img className="home-pp" src={PictureProfil} alt="AeLBuS" />
-        </div>
-        <div className="home-link">
-          <a href={CV} target="_blank" rel="noreferrer">
-            Télécharger CV
-          </a>
         </div>
       </div>
     </div>

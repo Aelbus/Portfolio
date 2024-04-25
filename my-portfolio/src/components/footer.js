@@ -34,7 +34,7 @@ const footer = () => {
           <img src={insta} alt="Instagram" />
         </a>
       </div>
-      <p>© 2023 AelbusProd All rights reserved</p>
+      <p>© 2024 AelbusProd All rights reserved</p>
     </footer>
   );
 };
