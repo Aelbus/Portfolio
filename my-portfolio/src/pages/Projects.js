@@ -5,6 +5,7 @@ import Ohmyfood from "../assets/images/projets/Ohmyfood.webp";
 import Grandline from "../assets/images/projets/Grandlinegallerietrollesque.webp";
 import Kasa from "../assets/images/projets/kasa.webp";
 import events from "../assets/images/projets/77events.webp";
+import aelslots from "../assets/images/projets/aelslot.webp";
 import argentbank from "../assets/images/projets/argentbank.webp";
 import logo_html from "../assets/icons/Skills/html.webp";
 import logo_css from "../assets/icons/Skills/css.webp";
@@ -67,6 +68,14 @@ const Projects = () => {
       skills: [logo_html, logo_css, logo_sass, logo_javascript, logo_react],
       codeLink: "https://github.com/Aelbus/GrandLine-FanSite",
       liveLink: "https://grandline-galerie-trollesque.netlify.app/",
+    },
+    {
+      title: "Aelslots",
+      info: "Petit projet perso d'une machine à sous basique",
+      image: aelslots,
+      skills: [logo_html, logo_css, logo_javascript, logo_react],
+
+      liveLink: "https://aelslots.netlify.app/",
     },
   ];
 
