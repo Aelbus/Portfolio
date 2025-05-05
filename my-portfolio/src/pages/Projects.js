@@ -73,7 +73,7 @@ const Projects = () => {
       title: "Aelslots",
       info: "Petit projet perso d'une machine à sous basique",
       image: aelslots,
-      skills: [logo_html, logo_css, logo_javascript, logo_react],
+      skills: [logo_html, logo_css, logo_sass, logo_javascript, logo_react],
 
       liveLink: "https://aelslots.netlify.app/",
     },
